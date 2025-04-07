@@ -4,7 +4,9 @@ import Header from './components/layout/Header';
 import HeroSection from './components/sections/HeroSection';
 import ChartSection from './components/sections/ChartSection';
 import IntegrationsSection from './components/sections/IntegrationsSection'; 
-import './styles/global.css';// Define un tema básico para styled-components 
+import FeaturesSection from './components/sections/FeaturesSection';
+import './styles/global.css';
+import StatsSection from './components/sections/StatsSection';
 const theme = {
   colors: {
     primary: '#7F56D9',
@@ -39,6 +41,8 @@ function App() {  return (
           <HeroSection />
           <ChartSection />
           <IntegrationsSection /> 
+          <StatsSection />
+          <FeaturesSection />
         </main>
       </div>
     </ThemeProvider>
