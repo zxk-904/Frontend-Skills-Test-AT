@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
   text-align: center;
-  padding: ${props => props.theme.spacing.md}; // Añadir algo de padding si es necesario
+  padding: ${props => props.theme.spacing.md}; 
 `;const IconWrapper = styled.div`
   display: inline-flex;
   align-items: center;
@@ -11,13 +11,13 @@ const CardWrapper = styled.div`
   width: 48px;
   height: 48px;
   border-radius: ${props => props.theme.borderRadius.md};
-  background-color: #F9F5FF; // Fondo morado claro para el icono
+  background-color: #F9F5FF; 
   margin-bottom: ${props => props.theme.spacing.md};
 
   img {
     width: 24px; // Ajusta el tamaño del icono
     height: 24px;
-    color: ${props => props.theme.colors.primary}; // Si usas SVGs que heredan color
+    color: ${props => props.theme.colors.primary}; 
   }
 `;
 

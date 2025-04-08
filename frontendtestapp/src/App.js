@@ -7,6 +7,10 @@ import IntegrationsSection from './components/sections/IntegrationsSection';
 import FeaturesSection from './components/sections/FeaturesSection';
 import './styles/global.css';
 import StatsSection from './components/sections/StatsSection';
+import TestimonialSection from './components/sections/TestimonialSection';
+import CallToActionSection from './components/sections/CallToActionSection';
+import FAQSection from './components/sections/FAQSection';
+
 const theme = {
   colors: {
     primary: '#7F56D9',
@@ -43,6 +47,9 @@ function App() {  return (
           <IntegrationsSection /> 
           <StatsSection />
           <FeaturesSection />
+          <TestimonialSection />
+          <CallToActionSection />
+          <FAQSection />
         </main>
       </div>
     </ThemeProvider>
