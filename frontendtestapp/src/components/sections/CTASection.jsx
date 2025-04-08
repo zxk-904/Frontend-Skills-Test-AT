@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CallToActionCard from '../common/CallToActionCard';
+import CTACard from '../common/CTACard';
 
 import image1 from '../../assets/images/people/people1.png';
 import image2 from '../../assets/images/people/people2.png';
@@ -13,8 +13,8 @@ const SectionContainer = styled.section`
   background-color: ${({ theme }) => theme.colors.background};
 `;
 
-const CallToActionSection = () => {
-  const callToActionData = {
+const CTASection = () => {
+  const ctaData = {
     title: 'No long-term contracts.',
     subtitle: 'No catches.',
     text: 'Start your 30-day free trial today.',
@@ -23,9 +23,9 @@ const CallToActionSection = () => {
 
   return (
     <SectionContainer>
-      <CallToActionCard {...callToActionData} />
+      <CTACard {...ctaData} />
     </SectionContainer>
   );
 };
 
-export default CallToActionSection;
+export default CTASection;

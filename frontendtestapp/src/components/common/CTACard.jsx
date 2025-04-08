@@ -96,7 +96,7 @@ const Image = styled.img`
   }
 `;
 
-const CallToActionCard = ({ title, subtitle, text, images }) => {
+const CTACard = ({ title, subtitle, text, images }) => {
   return (
     <CardContainer>
       <LeftContent>
@@ -117,4 +117,4 @@ const CallToActionCard = ({ title, subtitle, text, images }) => {
   );
 };
 
-export default CallToActionCard;
+export default CTACard;

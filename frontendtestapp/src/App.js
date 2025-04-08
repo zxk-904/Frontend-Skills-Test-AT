@@ -6,10 +6,12 @@ import ChartSection from './components/sections/ChartSection';
 import IntegrationsSection from './components/sections/IntegrationsSection'; 
 import FeaturesSection from './components/sections/FeaturesSection';
 import './styles/global.css';
-import StatsSection from './components/sections/StatsSection';
+import MetricsSection from './components/sections/MetricsSection';
 import TestimonialSection from './components/sections/TestimonialSection';
-import CallToActionSection from './components/sections/CallToActionSection';
+import CTASection from './components/sections/CTASection';
 import FAQSection from './components/sections/FAQSection';
+import MoreTestimonialsSection from './components/sections/MoreTestimonialsSection';
+
 
 const theme = {
   colors: {
@@ -45,11 +47,12 @@ function App() {  return (
           <HeroSection />
           <ChartSection />
           <IntegrationsSection /> 
-          <StatsSection />
+          <MetricsSection />
           <FeaturesSection />
           <TestimonialSection />
-          <CallToActionSection />
+          <CTASection />
           <FAQSection />
+          <MoreTestimonialsSection />
         </main>
       </div>
     </ThemeProvider>
