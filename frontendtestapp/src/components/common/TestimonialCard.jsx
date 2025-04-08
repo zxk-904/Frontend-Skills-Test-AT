@@ -1,116 +1,153 @@
 import React from 'react';
 import styled from 'styled-components';
 import starIcon from '../../assets/images/icons/star-icon.png';
-import blondeImage from '../../assets/images/people/blonde.png';
 
 const CardContainer = styled.div`
   display: flex;
-  border-radius: ${({ theme }) => theme.borderRadius.lg};
-  background-color: ${({ theme }) => theme.colors.background};
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 1200px; 
-  width: 95%; 
-  margin: 0 auto;
-  height: 50vh; 
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  width: 1216px;
+  height: 448px;
+  background: #53389e;
+  border-radius: 24px;
 `;
 
-const LeftSection = styled.div`
-  flex: 1;
-  background: url(${blondeImage}) no-repeat center center;
+const ImageContainer = styled.div`
+  width: 480px;
+  height: 448px;
+  min-height: 448px;
+  background: url(${({ src }) => src}) no-repeat center center;
   background-size: cover;
-  height: 100%;
+  border-radius: 0px;
+  position: relative;
 `;
 
-const RightSection = styled.div`
-  flex: 2;
-  background-color: ${({ theme }) => theme.colors.primaryDark};
-  color: ${({ theme }) => theme.colors.background};
+const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: ${({ theme }) => theme.spacing.lg};
-  padding-right: ${({ theme }) => theme.spacing.xxl};
-  height: 100%;
-  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px;
+  gap: 40px;
+  width: 736px;
+  height: 434px;
+`;
+
+const QuoteAndAttribution = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  width: 608px;
+  height: 306px;
+`;
+
+const QuoteAndStars = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 608px;
+  height: 176px;
 `;
 
 const Stars = styled.div`
   display: flex;
-  gap: 0.25rem;
-  margin-left: 3rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  width: 116px;
+  height: 20px;
 `;
 
 const StarIcon = styled.img`
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 `;
 
 const Quote = styled.p`
-  font-size: 2.10rem; 
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  line-height: 1.2;
-  margin: ${({ theme }) => theme.spacing.md} 0;
-  text-align: left;
-  margin-left: 3rem;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  width: 608px;
+  height: 132px;
 `;
 
-const Author = styled.div`
-  font-size: 1.100rem;
-  font-weight: 700;
-  opacity: 0.8;
-  margin-left: 3rem;
-`;
-
-const NavigationDots = styled.div`
+const Attribution = styled.div`
   display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  position: absolute; 
-  bottom: 5rem; 
-  left: ${({ theme }) => theme.spacing.lg}; 
-  margin-left: 3rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 608px;
+  height: 56px;
 `;
 
-const Dot = styled.div`
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: ${({ active, theme }) =>
-    active ? theme.colors.background : 'rgba(255, 255, 255, 0.5)'};
+const Author = styled.p`
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  width: 608px;
+  height: 28px;
+`;
+
+const Role = styled.p`
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e9d7fe;
+  width: 608px;
+  height: 24px;
+`;
+
+const PaginationDotGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.spacing.xl};
+  width: 62px;
+  height: 10px;
+`;
+
+const PaginationDot = styled.div`
+  width: 10px;
+  height: 10px;
+  background: ${({ active }) => (active ? '#FFFFFF' : '#9E77ED')};
+  border-radius: 9999px;
 `;
 
 const TestimonialCard = ({ image, stars, quote, author, role }) => {
   return (
     <CardContainer>
-      <LeftSection style={{ backgroundImage: `url(${image})` }} />
-      <RightSection>
-        <div>
-          <Stars>
-            {[...Array(stars)].map((_, index) => (
-              <StarIcon key={index} src={starIcon} alt="Star" />
-            ))}
-          </Stars>
-          <Quote>
-            {quote.map((line, index) => (
-              <span key={index}>
-                {line}
-                <br />
-              </span>
-            ))}
-          </Quote>
-          <Author>
-            - {author}
-            <br />
-            {role}
-          </Author>
-        </div>
-        <NavigationDots>
-          <Dot active />
-          <Dot />
-          <Dot />
-        </NavigationDots>
-      </RightSection>
+      <ImageContainer src={image} />
+      <Content>
+        <QuoteAndAttribution>
+          <QuoteAndStars>
+            <Stars>
+              {[...Array(stars)].map((_, index) => (
+                <StarIcon key={index} src={starIcon} alt="Star" />
+              ))}
+            </Stars>
+            <Quote>{quote.join(' ')}</Quote>
+          </QuoteAndStars>
+          <Attribution>
+            <Author>{author}</Author>
+            <Role>{role}</Role>
+          </Attribution>
+        </QuoteAndAttribution>
+        <PaginationDotGroup>
+          <PaginationDot active />
+          <PaginationDot />
+          <PaginationDot />
+        </PaginationDotGroup>
+      </Content>
     </CardContainer>
   );
 };

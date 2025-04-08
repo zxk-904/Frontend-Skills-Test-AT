@@ -4,14 +4,26 @@ import TestimonialCard from '../common/TestimonialCard';
 import blondeImage from '../../assets/images/people/blonde.png';
 
 const SectionContainer = styled.section`
-  padding: ${({ theme }) => theme.spacing.xxl} 0;
-  background-color: ${({ theme }) => theme.colors.background};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0px;
+  gap: 64px;
+  width: 1440px;
+  height: 640px;
+  background: #ffffff;
 `;
 
-const SectionContent = styled.div`
-  max-width: ${({ theme }) => theme.containerWidth};
-  margin: 0 auto;
-  padding: 0 ${({ theme }) => theme.spacing.lg};
+const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 32px;
+  width: 1280px;
+  max-width: 1280px;
+  height: 448px;
 `;
 
 const TestimonialSection = () => {
@@ -29,9 +41,9 @@ const TestimonialSection = () => {
 
   return (
     <SectionContainer>
-      <SectionContent>
+      <ContentContainer>
         <TestimonialCard {...testimonialData} />
-      </SectionContent>
+      </ContentContainer>
     </SectionContainer>
   );
 };

@@ -1,8 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import Header from './components/layout/Header';
-import HeroSection from './components/sections/HeroSection';
-import ChartSection from './components/sections/ChartSection';
 import IntegrationsSection from './components/sections/IntegrationsSection'; 
 import FeaturesSection from './components/sections/FeaturesSection';
 import './styles/global.css';
@@ -11,6 +9,8 @@ import TestimonialSection from './components/sections/TestimonialSection';
 import CTASection from './components/sections/CTASection';
 import FAQSection from './components/sections/FAQSection';
 import MoreTestimonialsSection from './components/sections/MoreTestimonialsSection';
+import CTA2Section from './components/common/CTA2Card';
+import HeroHeaderSection from './components/sections/HeroHeaderSection';
 
 
 const theme = {
@@ -42,10 +42,8 @@ const theme = {
 function App() {  return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Header />
         <main>
-          <HeroSection />
-          <ChartSection />
+          <HeroHeaderSection />
           <IntegrationsSection /> 
           <MetricsSection />
           <FeaturesSection />
@@ -53,6 +51,7 @@ function App() {  return (
           <CTASection />
           <FAQSection />
           <MoreTestimonialsSection />
+          <CTA2Section />
         </main>
       </div>
     </ThemeProvider>
