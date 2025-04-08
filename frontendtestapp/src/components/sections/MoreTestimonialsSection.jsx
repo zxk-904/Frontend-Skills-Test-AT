@@ -112,8 +112,8 @@ const MoreTestimonialsSection = () => {
           </div>
           <div>
             <ButtonContainer>
-                <SecondaryButton>Learn More</SecondaryButton>
-                <PrimaryButton>Get Started</PrimaryButton>
+                <SecondaryButton>Our Customers</SecondaryButton>
+                <PrimaryButton>Create Account</PrimaryButton>
             </ButtonContainer>
           </div>
         </FirstContent>

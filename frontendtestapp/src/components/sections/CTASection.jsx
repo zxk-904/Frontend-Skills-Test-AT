@@ -15,10 +15,9 @@ const SectionContainer = styled.section`
 
 const CTASection = () => {
   const ctaData = {
-    title: 'No long-term contracts.',
-    subtitle: 'No catches.',
-    text: 'Start your 30-day free trial today.',
-    images: [image1, image2, image3, image4, image5],
+    title: 'No long-term contracts. No catches.', 
+    text: 'Start your 30-day free trial today.', 
+    images: [image2, image5, image3, image4, image1],
   };
 
   return (
