@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SecondaryButton, PrimaryButton } from '../common/Button2';
+import { SecondaryButton, PrimaryButton } from '../common/Button';
 import { ArrowButton, ArrowIcon } from '../common/ArrowButton';
 import TestimonialCard from '../common/TestimonialCard2';
 import alisaHester from '../../assets/images/people/alisa-hester.png'; 

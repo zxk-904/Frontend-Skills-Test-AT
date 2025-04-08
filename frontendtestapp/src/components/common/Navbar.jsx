@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import LogoImage from '../../assets/images/logo_untitled.png'; // Ruta del logo
+import LogoImage from '../../assets/images/logo_untitled.png'; 
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -18,7 +18,7 @@ const NavbarContainer = styled.nav`
 const NavbarContent = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+  justify-content: flex-start; 
   align-items: center;
   padding: 0px 32px;
   width: 1280px;
@@ -36,9 +36,9 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 32px; /* Tamaño fijo del logo */
-  height: 32px; /* Tamaño fijo del logo */
-  object-fit: contain; /* Asegura que la imagen se ajuste correctamente */
+  width: 32px; 
+  height: 32px; 
+  object-fit: contain; 
 `;
 
 const LogoText = styled.div`
@@ -48,7 +48,7 @@ const LogoText = styled.div`
   font-size: 16px;
   line-height: 24px;
   color: #101828;
-  margin-left: 8px; /* Espacio entre el logo y el texto */
+  margin-left: 8px; 
 `;
 
 const Navigation = styled.div`
@@ -56,7 +56,7 @@ const Navigation = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 32px;
-  margin-left: 16px; /* Espacio entre el texto del logo y los ítems de navegación */
+  margin-left: 16px; 
 `;
 
 const NavItem = styled.div`
@@ -75,7 +75,7 @@ const NavItem = styled.div`
     position: relative;
 
     &:after {
-      content: '▾'; /* Flecha hacia abajo */
+      content: '▾'; 
       font-size: 12px;
       color: #475467;
     }
@@ -87,7 +87,7 @@ const Actions = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  margin-left: auto; /* Empuja los botones hacia la derecha */
+  margin-left: auto; 
   width: auto;
   height: 44px;
 `;

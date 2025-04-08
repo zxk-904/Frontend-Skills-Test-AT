@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Navbar from '../common/Navbar';
 import Input from '../common/Input';
-import { PrimaryButton } from '../common/Button2';
+import { PrimaryButton } from '../common/Button';
 import MockupChartComponent from '../common/MockChartComponent';
 import ActivityGauge from '../common/ActivityGauge';
 import RingMiddleImage from '../../assets/images/lineas_gauge/ring-middle.png';
@@ -148,9 +148,9 @@ const ActivityGaugeWrapper = styled.div`
 
 const HeroHeaderSection = () => {
   const gaugeImages = [
-    { src: RingOuterImage, size: 224 }, // Imagen para el anillo exterior
-    { src: RingMiddleImage, size: 184 }, // Imagen para el anillo medio
-    { src: RingInnerImage, size: 144 }, // Imagen para el anillo interior
+    { src: RingOuterImage, size: 224 }, 
+    { src: RingMiddleImage, size: 184 }, 
+    { src: RingInnerImage, size: 144 }, 
   ];
   return (
     <HeroHeaderContainer>

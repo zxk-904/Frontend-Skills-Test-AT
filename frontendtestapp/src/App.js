@@ -11,6 +11,7 @@ import FAQSection from './components/sections/FAQSection';
 import MoreTestimonialsSection from './components/sections/MoreTestimonialsSection';
 import CTA2Section from './components/common/CTA2Card';
 import HeroHeaderSection from './components/sections/HeroHeaderSection';
+import FooterSection from './components/sections/FooterSection';
 
 
 const theme = {
@@ -51,7 +52,8 @@ function App() {  return (
           <CTASection />
           <FAQSection />
           <MoreTestimonialsSection />
-          <CTA2Section />
+          {/*<CTA2Section />*/} {/* No se implemento debido a un error*/}
+          <FooterSection />
         </main>
       </div>
     </ThemeProvider>

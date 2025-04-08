@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SecondaryButton, PrimaryButton } from './Button2';
+import { SecondaryButton, PrimaryButton } from './Button';
 
 const CardContainer = styled.div`
   display: flex;

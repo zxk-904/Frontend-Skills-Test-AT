@@ -15,7 +15,7 @@ const CardWrapper = styled.div`
   margin-bottom: ${props => props.theme.spacing.md};
 
   img {
-    width: 24px; // Ajusta el tamaño del icono
+    width: 24px; 
     height: 24px;
     color: ${props => props.theme.colors.primary}; 
   }
